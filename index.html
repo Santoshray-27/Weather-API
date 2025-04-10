@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="location-input" placeholder="Enter city or country name">
+            <button id="search-btn">Search</button>
+            <div class="error-message" id="error-message">Location not found. Please try again.</div>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+        
+        <div class="weather-info" id="weather-info">
+            <div class="city-name" id="city-name">London</div>
+            <div class="country" id="country">United Kingdom</div>
+            
+            <div class="temperature" id="temperature">21°C</div>
+            
+            <div class="weather-condition">
+                <img src="" alt="Weather icon" class="weather-icon" id="weather-icon">
+                <div class="condition-text" id="condition-text">Partly cloudy</div>
+            </div>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <div class="detail-label">Feels Like</div>
+                    <div class="detail-value" id="feels-like">19°C</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Humidity</div>
+                    <div class="detail-value" id="humidity">65%</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Wind</div>
+                    <div class="detail-value" id="wind">12 km/h</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Pressure</div>
+                    <div class="detail-value" id="pressure">1013 hPa</div>
+                </div>
+            </div>
+            
+            <div class="air-quality">
+                <div class="detail-label">Air Quality (US EPA Index)</div>
+                <div class="aqi-level" id="aqi-level">Good</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
